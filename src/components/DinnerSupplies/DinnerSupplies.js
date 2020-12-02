@@ -1,5 +1,6 @@
 // imports
 import React, { Component } from 'react';
+import SilverWare from '../SilverWare.js/SilverWare'
 
 // class
 class DinnerSupplies extends Component {
@@ -7,16 +8,9 @@ class DinnerSupplies extends Component {
         return (
             <div>
                 <h2>Dinner Supplies</h2>
-                <div>
-                    Spoons: {this.props.count * 2}
-                </div>
-                <div>
-                    Forks: {this.props.count * 2}
-                </div>
-                <div>
-                    Knives: {this.props.count * 2}
-                </div>
-
+                <SilverWare name="Spoons" count={this.props.count} />
+                <SilverWare name="Forks" count={this.props.count} />
+                <SilverWare name="Knives" count={this.props.count} />
             </div>
         ) 
     } 
